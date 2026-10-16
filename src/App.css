@@ -127,7 +127,11 @@
 }
 
 /* Adaptación para pantallas pequeñas */
+
 @media (max-width: 768px) {
+
+    .Encabezado,
+    .pie
     .sidebar {
         width: 200px;
         padding: 20px 10px;
@@ -184,8 +188,107 @@
 }
 
 .pie{
+    margin-left: 250px;
     text-align: center;
     padding:2rem;
     background-color: #1f3864;
     color: white;
+    
+}
+
+
+.principal {
+    margin-left: 250px;
+}
+
+.menu-usuario {
+    position: relative;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.menu-usuario-boton {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: transparent;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.menu-usuario-datos {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.menu-usuario-rol {
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+
+.flecha::after {
+    content: '▾';
+}
+.menu-desplegable {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    min-width: 180px;
+    margin: 0;
+    padding: 0.5rem 0;
+    list-style: none;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+.menu-usuario:hover .menu-desplegable {
+    display: block;
+}
+
+.menu-desplegable a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #1e293b;
+    text-decoration: none;
+}
+
+.menu-desplegable a:hover {
+    background: #f1f5f9;
+}
+.separador {
+    height: 1px;
+    margin: 0.4rem 0;
+    background: #e2e8f0;
+}
+
+.tarjeta-destacada {
+    border-top-color: #f59e0b;
+}
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+        padding: 20px 10px;
+    }
+
+    .principal {
+        margin-left: 200px;
+    }
+
+    .sidebar-menu a {
+        font-size: 14px;
+        padding: 12px 10px;
+    }
+
+    .sidebar-header h2 {
+        font-size: 22px;
+    }
 }

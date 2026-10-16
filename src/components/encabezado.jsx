@@ -1,17 +1,15 @@
-function Encabezado() {
+import MenuUsuario from "./MenuUser";
+
+function Encabezado({usuario}) {
     return (
         <header className="Encabezado">
             <div className="Encabezado-marca">
+                <span className="Encabezado-logo">⚛️</span>
             <h1> first time one Encabezado</h1>
-                <nav>
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Contact</a>
-                    
-                </nav>
+              
     
             </div>   
-           
+           <MenuUsuario usuario={usuario}/>
         </header>
 
         )

@@ -1,7 +1,6 @@
 import reactLogo from '../assets/react.svg';
 
 function Tarjeta({icono,titulo,descripcion,horas,destacada}) {
-    console.log()
     return (
         <>
             <article className={destacada ? 'tarjeta trajeta-destacada' : 'tarjeta'}>
